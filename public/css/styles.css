@@ -16,32 +16,17 @@ background-color: #ebebeb;
     --dark-gray: #666;
     --light-gray: #ebebeb;
     --green: #39b54a;
+    --title: 24px;
+    --text-body: 12px;
+    --price: 18px;
+    --discount: 16px;
+    --description: 16px;
 }
 
 .nav-bar {
     width: 100vw;
     height: auto;
     background-color: var(--yellow);
-}
-
-.title {
-    font-size: 24px;
-}
-
-.text-body {
-    font-size: 12px;
-}
-
-.price {
-    font-size: 18px;
-}
-
-.discount {
-    font-size: 16px;
-}
-
-.description {
-    font-size: 16px;
 }
 
 .logo-search-container {
@@ -124,13 +109,13 @@ background-color: #ebebeb;
 }
 
 .nav-bar .home-banner {
-    /* width: 100vw;
-    height: auto; */
+    width: 100%;
+    height: auto;
 }
 
 .nav-bar .home-banner > img {
-    /* max-height:100%; 
-    max-width:100%; */
+    max-width: 100%;
+    display: block;
 }
 
 .menu li a {
@@ -173,14 +158,19 @@ background-color: #ebebeb;
     text-align: center;
 }
 
+.footer-container .footer-cards > p {
+    font-size: var(--text-body);
+}
+
 .footer-cards > h3 {
+    font-size: var(--description);
     margin-top: 10px;
     color: var(--dark-gray);
     color: #4b4b4b !important;
 }
 
 .footer-cards > p {
-    font-size: 12px;
+    font-size: var(--text-body);
     padding: 3px 0;
     color: #999;
 }
@@ -197,4 +187,75 @@ background-color: #ebebeb;
     background-color: white;
     display: flex;
     color: #999;
+}
+
+.copyright-container > h4 {
+    font-size: var(--text-body);
+}
+
+.main-container {
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.main-container .center-section {
+    margin: auto;
+    width: 90%;
+}
+
+.center-section .product {
+    background-color: #ffffff;
+    margin: 10px auto;
+}
+
+.center-section .product img {
+    max-width: 100%;
+}
+
+.description-section {
+    background-color: white;
+    border-top: 1px solid var(--light-gray);
+    padding: 15px;
+    text-align: left;
+}
+
+.description-section p {
+    margin: 5px 0 0 0;
+}
+
+.description-section p:nth-child(2) {
+    font-size: var(--price);
+}
+
+.description-section p:nth-child(3) {
+    font-size: var(--discount);
+    color: var(--green);
+}
+
+.description-section > h4 {
+    font-size: var(--description);
+    margin-top: 15px;
+    font-weight: 100;
+    color: var(--dark-gray);
+}
+
+.shipping-container {
+    border: 1px solid var(--green);
+    display: flex;
+    border-radius: 35px;
+    width: 35px;
+    height: 35px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+}
+
+
+@media (min-width:361px) {
+
+}
+
+@media (min-width:769px) {
+
 }

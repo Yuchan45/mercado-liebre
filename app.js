@@ -12,4 +12,4 @@ app.get('/', (req, res) => {
 
 app.listen(3000, () => {
     console.log("Sevidor corriendo en puerto 3000");
-})
+});
