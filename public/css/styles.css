@@ -252,10 +252,20 @@ background-color: #ebebeb;
 }
 
 
-@media (min-width:361px) {
+@media (max-width:360px) {
+    .description-section {
+        display: none;
+    }
+}
 
+@media (min-width:361px) {
+    .description-section {
+        display: block;
+    }
 }
 
 @media (min-width:769px) {
-
+    .center-section .product {
+        box-shadow: 8px 8px 22px 0px rgb(0 0 0 / 25%);
+    }
 }
