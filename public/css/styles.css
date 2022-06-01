@@ -237,11 +237,20 @@ background-color: #ebebeb;
     margin: 5px 0 0 0;
 }
 
-.description-section p:nth-child(2) {
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.price-container p:nth-child(1) {
+    /* width: 30%; */
     font-size: var(--price);
 }
 
-.description-section p:nth-child(3) {
+.price-container p:nth-child(2) {
+    /* width: 70%; */
+    margin-left: 15px;
     font-size: var(--discount);
     color: var(--green);
 }
