@@ -302,12 +302,10 @@ background-color: #ebebeb;
     .description-section {
         display: block;
     }
-    .main-container .center-section {
-
-    }
     .main-container .center-section > h3 {
         display: block;
         width: 100%;
+        margin-left: 10px;
     }
     .center-section .product {
         width: 45%;
@@ -324,6 +322,9 @@ background-color: #ebebeb;
     }
     .hamburger-container {
         display: none;
+    }
+    .main-container .center-section > h3 {
+        margin-left: 5px;
     }
     .center-section .product {
         box-shadow: 8px 8px 22px 0px rgb(0 0 0 / 25%);
