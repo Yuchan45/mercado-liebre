@@ -481,6 +481,7 @@ body {
     .menu-buttons {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .menu-buttons .menu {
         margin-bottom: 10px;
@@ -509,6 +510,7 @@ body {
 @media (min-width:769px) {
     .menu-buttons {
         display: flex;
+        justify-content: space-between;
     }
     .hamburger-container {
         display: none;
