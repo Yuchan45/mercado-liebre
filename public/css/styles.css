@@ -147,16 +147,16 @@ background-color: #ebebeb;
     justify-content: space-evenly;
 }
 
-.menu-buttons .account .account-links {
+.menu-buttons .account a {
+    text-decoration: none;
+    color: black;
     margin: 0 10px;
     display: flex;
     align-content: center;
     align-items: center;
 }
 
-.menu-buttons .account-links li a {
-    text-decoration: none;
-    color: black;
+.menu-buttons .account p {
     margin: 0 5px 0 0;
 }
 
