@@ -390,7 +390,7 @@ body {
     width: 100%;
     margin: auto;
     padding: 0 10px;
-    height: 40px;
+    height: 50px;
     border-radius: 0;
     border: none;
     border-bottom: 1px solid var(--blue);
@@ -475,6 +475,19 @@ body {
     .description-section {
         display: block;
     }
+    .hamburger-container {
+        display: none;
+    }
+    .menu-buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-buttons .menu {
+        margin-bottom: 10px;
+    }
+    .menu-buttons .account {
+        margin-bottom: 10px;
+    }
     .main-container .center-section > h3 {
         display: block;
         width: 100%;
@@ -499,6 +512,13 @@ body {
     }
     .hamburger-container {
         display: none;
+    }
+    .menu-buttons .menu {
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .menu-buttons .account {
+        width: auto;
     }
     .main-container .center-section > h3 {
         margin-left: 5px;
@@ -540,6 +560,7 @@ body {
         display: block;
     }
     .main-login .login-wrapper {
+        padding: 50px;
         max-width: 400px;
         border-radius: 3px;
         margin-top: -80px;
@@ -553,3 +574,9 @@ body {
         margin-top: 100px;
     }
 }
+
+
+/* --- REGISTRO CSS --- */
+
+
+
