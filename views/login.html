@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTAWESOME(? -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- GOOGLE FONTS ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Log In - MELI</title>
+</head>
+<body>
+    <header class="login-header">
+        <div class="header-bounds">
+            <div class="logo">
+                <img src="/img/logo-mercado-liebre.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="main-login">
+        <div class="yellow-header"></div>
+        <div class="login-wrapper">
+            <h1>Log In</h1>
+            <h4>Ingresa tu cuenta de Mercado Liebre</h4>
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <label for="user">Usuario</label>
+                    <input type="text" name="user" id="user">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="error-message-container">
+                    <label class="error-msg">Contraseña incorrecta</label>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+                <a href="/register" class="crear-cuenta">Crear cuenta</a>
+            </form>
+        </div>
+    </main>
+    <footer class="footer-container login-footer">
+        <section>
+            <div class="footer-cards">
+                <i class="fa-solid fa-credit-card footer-icons"></i>
+                <h3>Pagá con tarjeta o efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+        </section>
+        <section>
+            <div class="footer-cards">
+                <i class="fa-solid fa-gift footer-icons"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+        </section>
+        <section>
+            <div class="footer-cards">
+                <i class="fa-solid fa-user-shield footer-icons"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="copyright-container">
+                <h4>Copyright © 1999-2020 MercadoLiebre S.R.L</h4>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/95aa681591.js" crossorigin="anonymous"></script>
+</body>
+</html>

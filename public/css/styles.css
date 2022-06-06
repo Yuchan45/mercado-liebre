@@ -6,12 +6,14 @@
 }
 
 body {
-background-color: #ebebeb;
+    text-align: center;
+    background-color: #ebebeb;
 }
 
 :root {
     --yellow: #EAC926;
     --blue: #03264C;
+    --select-blue: #63a6ff;
     --light-blue: #1259c3;
     --dark-gray: #666;
     --light-gray: #ebebeb;
@@ -111,11 +113,13 @@ background-color: #ebebeb;
 .nav-bar .home-banner {
     width: 100%;
     height: auto;
+    text-align: center;
 }
 
 .nav-bar .home-banner > img {
     max-width: 100%;
     display: block;
+    margin: auto;
 }
 
 .menu-buttons {
@@ -303,6 +307,168 @@ background-color: #ebebeb;
     color: var(--green);
 }
 
+
+
+/* --- LOGIN CSS --- */
+.login-header {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--yellow);
+}
+
+.login-header .header-bounds {
+    width: 100%;
+    margin: auto;
+}
+
+.login-header .header-bounds .logo {
+    width: 150px;
+    padding: 10px;
+}
+
+.login-header .header-bounds .logo > img{
+    max-width: 100%;
+}
+
+.main-login {
+    height: 75vh;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+.main-login .yellow-header {
+    height: 110px;
+    width: 100vw;
+    background-color: var(--yellow);
+    display: none;
+}
+
+.main-login .login-wrapper {
+    width: 100%;
+    padding: 50px 25px;
+    background-color: white;
+}
+
+.main-login .login-wrapper > h1 {
+    padding-top: 15px;
+    font-size: var(--title);
+}
+
+.main-login .login-wrapper > h4 {
+    font-size: var(--text-body);
+    font-weight: 100;
+    color: var(--dark-gray);
+}
+
+.login-wrapper form {
+    margin-top: 25px;
+}
+
+.login-wrapper form .form-group {
+    text-align: left;
+    padding: 10px 0;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    padding: 0 5px;
+    margin-left: 10px;
+    display: block;
+    font-size: var(--text-body);
+    position: absolute;
+    top: 5px;
+    background-color: white;
+}
+
+.form-group input {
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--blue);
+    font-size: var(--description);
+    transition: all 0.05s ease;
+}
+
+.form-group input:focus {
+    outline: none !important;
+    border: 3px solid var(--select-blue);
+    border-radius: 3px;
+}
+
+.error-message-container {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    /* border-radius: 3px; */
+    opacity: 0.5;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.error-message-container .error-msg {
+    color: white;
+}
+
+.active-error {
+    color: white;
+    display: block;
+}
+
+.login-wrapper form .submit-btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--light-blue);
+    color: white;
+    font-size: var(--description);
+    transition: 0.2s ease;
+}
+
+.login-wrapper form .submit-btn:hover {
+    background-color: #124897;
+}
+
+.crear-cuenta {
+    font-weight: 800 !important;
+    display: flex;
+    height: 40px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+    color: var(--light-blue);
+    font-size: var(--description);
+    font-weight: 500;
+    transition: .2s ease;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.crear-cuenta:hover {
+    background-color: #0000000d !important;
+}
+
+
+.login-footer {
+    padding: 0;   
+}
+
 /* TABLET */
 @media (min-width:361px) {
     .description-section {
@@ -318,6 +484,10 @@ background-color: #ebebeb;
     }
     .footer-container .footer-cards {
         width: 310px;
+    }
+    /*LOGIN*/
+    .main-login .login-wrapper {
+        width: 80%;
     }
 }
 
@@ -361,5 +531,24 @@ background-color: #ebebeb;
         display: flex;
         justify-content: center;
     }
-
+    /*LOGIN*/
+    .login-header .header-bounds {
+        width: 80%;
+    }
+    .main-login .yellow-header {
+        display: block;
+    }
+    .main-login .login-wrapper {
+        max-width: 400px;
+        border-radius: 3px;
+        margin-top: -80px;
+        box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+    }
+    .main-login {
+        background-color: transparent;
+    }
+    .login-footer {
+        padding: 30px 0 15px 0;
+        margin-top: 100px;
+    }
 }
