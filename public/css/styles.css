@@ -162,8 +162,10 @@ background-color: #ebebeb;
 
 .footer-container {
     background-color: white;
+    padding: 30px 0 15px 0;
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -202,6 +204,10 @@ background-color: #ebebeb;
 .footer-icons {
     color: var(--light-blue);
     font-size: 25px;
+}
+
+.footer-container .copyright {
+    margin-top: 25px;
 }
 
 .copyright-container {
@@ -342,4 +348,18 @@ background-color: #ebebeb;
     .nav-bar .suggestion-container{
         width: 30%;
     }
+    .footer-container .footer-cards {
+        width: 250px;
+        padding: 5px;
+    }
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .footer-container .copyright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
 }
