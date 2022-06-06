@@ -359,6 +359,7 @@ body {
 }
 
 .main-login .login-wrapper > h4 {
+    margin-top: 5px;
     font-size: var(--text-body);
     font-weight: 100;
     color: var(--dark-gray);
