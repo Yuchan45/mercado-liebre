@@ -340,7 +340,7 @@ body {
     flex-direction: column;
 }
 
-.main-login .yellow-header {
+.yellow-header {
     height: 110px;
     width: 100vw;
     background-color: var(--yellow);
@@ -353,12 +353,12 @@ body {
     background-color: white;
 }
 
-.main-login .login-wrapper > h1 {
+.form-title {
     padding-top: 15px;
     font-size: var(--title);
 }
 
-.main-login .login-wrapper > h4 {
+.form-subtitle {
     margin-top: 5px;
     font-size: var(--text-body);
     font-weight: 100;
@@ -470,6 +470,119 @@ body {
     padding: 0;   
 }
 
+/* --- REGISTRO CSS --- */
+.main-register {
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+.main-register .register-wrapper {
+    width: 100%;
+    padding: 50px 25px;
+    background-color: white;
+}
+
+
+.register-wrapper form .submit-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--light-blue);
+    color: white;
+    font-size: var(--description);
+    transition: 0.2s ease;
+}
+
+.register-wrapper form .submit-btn:hover {
+    background-color: #124897;
+}
+
+.register-wrapper form .form-group {
+    text-align: left;
+    padding: 10px 0;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.register-wrapper form .form-group label {
+    padding: 0 5px;
+    margin-left: 10px;
+    display: block;
+    font-size: var(--text-body);
+    position: absolute;
+    top: 5px;
+    background-color: white;
+}
+
+.register-wrapper form .form-group input {
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid var(--blue);
+    font-size: var(--description);
+    transition: all 0.05s ease;
+}
+
+.register-wrapper form .form-group input:focus {
+    outline: none !important;
+    border: 3px solid var(--select-blue);
+}
+
+.register-form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-label {
+    font-size: var(--description);
+    text-align: left;
+    margin-top: 15px;
+}
+
+.first-last-name {
+    width: 100%;
+}
+
+.user {
+    width: 100%;
+}
+
+.email {
+    width: 100%;
+}
+
+.radio-list {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.radio-list .radio-group {
+    padding: 5px;
+}
+
+.checkbox-list {
+    text-align: left;
+}
+
+.checkbox-list .checkbox-group {
+    padding: 5px;
+}
+
+
+
+/* MEDIA QUERIES */
 /* TABLET */
 @media (min-width:361px) {
     .description-section {
@@ -504,6 +617,9 @@ body {
     .main-login .login-wrapper {
         width: 80%;
     }
+    /*REGISTER*/
+
+
 }
 
 /* Desktop */
@@ -558,7 +674,7 @@ body {
     .login-header .header-bounds {
         width: 80%;
     }
-    .main-login .yellow-header {
+    .yellow-header {
         display: block;
     }
     .main-login .login-wrapper {
@@ -575,10 +691,35 @@ body {
         padding: 30px 0 15px 0;
         margin-top: 100px;
     }
+    /*REGISTER*/
+    .main-register {
+        background-color: transparent;
+    }
+    .main-register .register-wrapper {
+        padding: 50px;
+        width: 80%;
+        max-width: 1000px;
+        border-radius: 3px;
+        margin-top: -80px;
+        box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+    }
+    .register-wrapper form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .register-form-left {
+        width: 50%;
+        padding: 15px;
+    }
+    .register-form-right {
+        width: 50%;
+        padding: 15px;
+    }
+    .send-container {
+        width: 100%;
+    }
+    .radio-list {
+        justify-content: flex-start;
+    }
+
 }
-
-
-/* --- REGISTRO CSS --- */
-
-
-
