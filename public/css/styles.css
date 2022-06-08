@@ -270,7 +270,7 @@ body {
     transition: all .3s ease;
 }
 
-.center-section .product:hover .description-section {
+.center-section .product:hover .description-section > h4 {
     opacity: 1;
 }
 
@@ -289,7 +289,6 @@ body {
     border-top: 1px solid var(--light-gray);
     padding: 15px;
     text-align: left;
-    opacity: 0;
     transition: all 0.3s ease;
 }
 
@@ -320,6 +319,8 @@ body {
     margin-top: 15px;
     font-weight: 100;
     color: var(--dark-gray);
+    opacity: 0;
+    transition: all .5s ease;
 }
 
 .shipping-container {
