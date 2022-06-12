@@ -221,8 +221,9 @@ body {
 
 .footer-icons {
     color: var(--light-blue);
-    font-size: 25px;
     transition: all .5s ease;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .footer-icons:hover {
