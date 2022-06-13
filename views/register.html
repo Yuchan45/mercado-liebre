@@ -17,15 +17,59 @@
     <title>Registro - MELI</title>
 </head>
 <body>
-    <header class="login-header">
-        <div class="header-bounds">
-            <div class="logo">
-                <img src="/img/logo-mercado-liebre.svg" alt="">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-search-container">
+                <div class="logo">
+                    <img src="/img/logo-mercado-liebre.svg" alt="">
+                </div>
+                <form class="search-bar" action="#" method="POST">
+                    <input class="search-input" type="search" name="search" id="search" placeholder="  Buscar productos...">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            
+                <div class="suggestion-container">
+                    <div class="suggestion">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <h4>Comprá en cuotas y sin tarjeta de crédito</h1>
+                    </div>
+                </div>
             </div>
-        </div>
+            <nav class="menu-buttons">
+                <ul class="menu">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+                <nav class="account">
+                    <a href="/register">
+                        <p>Creá tu cuenta</p>
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+                    <a href="/login">
+                        <p>Ingresá</p>
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </a>
+                    <a href="">
+                        <p>Mis compras</p>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>              
+                </nav>
+            </nav>
+            <div class="hamburger-container">
+                <div class="lines-wrap">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+            </div>
+            <banner class="home-banner">
+                <img src="/img/img-home-banner.jpg" alt="">
+            </banner>
+        </nav>
     </header>
     <main class="main-register">
-        <div class="yellow-header"></div>
         <div class="register-wrapper">
             <h1 class="form-title">Registrate</h1>
             <h4 class="form-subtitle ">Se parte de Mercado Liebre</h4>
