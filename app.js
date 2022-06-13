@@ -3,6 +3,7 @@ const path = require('path');
 
 const app = express();
 
+
 //MIDDLEWARE
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
