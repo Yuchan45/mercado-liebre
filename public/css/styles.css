@@ -228,7 +228,6 @@ body {
 
 .footer-icons:hover {
     color: var(--blue);
-    font-size: 25px;
 }
 
 .footer-container .copyright {
