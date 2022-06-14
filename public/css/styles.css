@@ -127,7 +127,7 @@ body {
 }
 
 .nav-bar .home-banner > img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     margin: auto;
 }

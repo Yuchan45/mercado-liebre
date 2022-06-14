@@ -73,20 +73,20 @@
         <div class="login-wrapper">
             <h1 class="form-title">Log In</h1>
             <h4 class="form-subtitle">Ingresa tu cuenta de Mercado Liebre</h4>
-            <form action="/" method="POST">
+            <form action="/" method="GET">
                 <div class="form-group">
                     <label for="user">Usuario</label>
-                    <input type="text" name="user" id="user">
+                    <input type="text" name="user" id="user" required>
                 </div>
                 <div class="form-group">
                     <label for="pass">Contraseña</label>
-                    <input type="password" name="pass" id="pass">
+                    <input type="password" name="pass" id="pass" required>
                 </div>
                 <div class="error-message-container">
                     <label class="error-msg">Contraseña incorrecta</label>
                 </div>
                 <button type="submit" class="submit-btn">Enviar</button>
-                <a href="/register" class="crear-cuenta">Crear cuenta</a>
+                <a href="/" class="crear-cuenta">Crear cuenta</a>
             </form>
         </div>
     </main>
